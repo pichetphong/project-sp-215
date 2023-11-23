@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="navy">#0C356A</color>
+    <color name="blue">#0174BE</color>
+    <color name="yellow">#FFC436</color>
+    <color name="wedding">#FFF0CE</color>
+    <color name="underline">#D8D6D6</color>
+</resources>
