@@ -5,10 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class Home : Fragment() {
 
@@ -19,6 +17,7 @@ class Home : Fragment() {
     lateinit var imageId: Array<Int>
     lateinit var heading: Array<String>
     lateinit var news: Array<String>
+    lateinit var videoId: Array<String>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -43,7 +42,7 @@ class Home : Fragment() {
 
                 val bundle = Bundle().apply {
                     putString("heading", newsArrayList[position].heading)
-                    putInt("imageId", imageId[position])
+                    putString("videoId", videoId[position])
                     putString("news", news[position])
                 }
 
@@ -97,6 +96,17 @@ class Home : Fragment() {
             getString(R.string.news_g),
             getString(R.string.news_h),
             getString(R.string.news_i),
+        )
+        videoId = arrayOf(
+            getString(R.string.video_1),
+            getString(R.string.video_2),
+            getString(R.string.video_3),
+            getString(R.string.video_4),
+            getString(R.string.video_5),
+            getString(R.string.video_6),
+            getString(R.string.video_7),
+            getString(R.string.video_8),
+            getString(R.string.video_9),
         )
 
         for(i in imageId.indices) {
